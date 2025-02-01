@@ -61,6 +61,7 @@ ALTER TABLE public.number_guess OWNER TO freecodecamp;
 --
 
 INSERT INTO public.number_guess VALUES ('Nuzua', 4, 11);
+INSERT INTO public.number_guess VALUES ('FinalTest', 1, 13);
 
 
 --
