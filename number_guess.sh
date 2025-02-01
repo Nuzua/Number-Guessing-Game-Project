@@ -11,7 +11,6 @@ echo "Guess the secret number between 1 and 1000:"
 guess=0
 while [ $random_number -ne $guess ] 
 do
- 
 read guess
 tries=$((tries + 1))
 if [[ $guess =~ ^[0-9]+$ ]]
@@ -49,7 +48,7 @@ then
 $PSQL "INSERT INTO number_guess(username, games_played, best_game) VALUES ('$username', 0, 0);"
 echo "Welcome, $username! It looks like this is your first time here."
 guessing_game $username
-#if the user exists acquire games played and best game and then initiate the game
+#if the user exists get games played and best game and then initiate the game
 else
 games_played=$($PSQL "SELECT games_played FROM number_guess WHERE username='$username';")
 best_game=$($PSQL "SELECT best_game FROM number_guess WHERE username='$username';")
