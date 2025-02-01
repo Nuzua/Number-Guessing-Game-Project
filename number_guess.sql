@@ -60,7 +60,7 @@ ALTER TABLE public.number_guess OWNER TO freecodecamp;
 -- Data for Name: number_guess; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
-INSERT INTO public.number_guess VALUES ('Nuzua', 3, 11);
+INSERT INTO public.number_guess VALUES ('Nuzua', 4, 11);
 
 
 --
